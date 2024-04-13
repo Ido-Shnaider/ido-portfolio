@@ -1,0 +1,85 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #F5F8FC;
+    font-family: 'Roboto', sans-serif;
+    padding: 5rem;
+  }
+  
+  .info-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+  }
+  
+  .info-box {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-container {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 60%;
+  }
+  
+  .form-container h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .map-container {
+    width: 55%;
+    /* Assuming you want to keep the aspect ratio of the map */
+    padding-top: 25%; /* This sets the height as a percentage of the width */
+    position: relative;
+    margin-right: 22%;
+  }
+  
+  .map-container iframe {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  

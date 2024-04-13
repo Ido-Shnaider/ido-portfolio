@@ -1,0 +1,97 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #F5F8FC;
+    margin-top: 5%;
+  }
+  
+  #tv {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    background: url('../../assets/profile.jpeg') center/cover no-repeat;
+    border-radius: 50% / 10%;
+    overflow: hidden; /* Ensure the image does not bleed outside the border-radius */
+  }
+  
+  #tv img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .intro-text h2 {
+    margin: 20px 0;
+  }
+
+  .intro-text p {
+    color: #757575; /* Use the same color code as your icons */
+    font-size: 1.35em; /* Adjust this value to make the text bigger */
+    line-height: 1.5; /* Adjust for better readability if necessary */
+  }
+  
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .12em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite alternate,
+      blink-caret .55s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The reverse typing effect */
+  @keyframes typing-reverse {
+    from { width: 100%; }
+    to { width: 0; }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between the icons as needed */
+  }
+  
+  .social-links a {
+    color: #757575; /* This sets the icon color, change it to match your desired color */
+    font-size: 24px; /* Adjust the size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .social-links a:hover {
+    color: #000000; /* Color of the icons on hover */
+  }
+  
+  .cv-download a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black; /* Style as needed */
+    border-radius: 25px; /* This makes the button rounded */
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  
+  .cv-download a:hover {
+    background-color: black;
+    color: white;
+  }
+  

@@ -1,0 +1,71 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ffffff; /* Or any color that fits your design */
+  }
+  
+  .about-text {
+    width: 50%;
+    margin-bottom: 15%;
+    padding: 15px;
+    /* Adjust padding and margins as needed */
+
+  }
+  .about-header {
+    font-weight: bold;
+    margin-bottom: 12%;
+    font-size: 2.5em;
+    margin-right: 60%;
+    margin-top: 5%;
+    margin-right: 70%;
+  }
+
+  .about-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%; /* Adds spacing between the text and the image */
+    margin-bottom: 10%;
+}
+  
+  .about-image img {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow its container */
+    border-radius: 10px; /* Adjust this value to change the rounding of the corners for the square shape */
+    /* If the image is not a square, the following styles will help give it a square aspect while hiding overflow */
+    width: auto;
+    height: 410px; /* Adjust height to manage the square size */
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* If you want the image to always be a square regardless of its original aspect ratio, you can wrap it in a div with these styles */
+  .about-image div {
+    width: 400px; /* Adjust width to manage the square size */
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Adjust this value to change the rounding of the corners for the square shape */
+  }
+  
+  /* Then, put the <img> tag inside this <div> in your component */
+  
+
+  
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adjust the space between the columns as needed */
+  }
+  
+  .skills-column {
+    flex: 1;
+  }
+  
+  .skill-bar + .skill-bar {
+    margin-top: 10px; /* Adds spacing between each progress bar */
+  }

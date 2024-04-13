@@ -1,0 +1,68 @@
+.services-container {
+  background-color: #F5F8FC;
+  padding: 5rem;
+  text-align: left; /* Align the heading to the left */
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 5%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: start; /* Align cards in a line at the start of the container */
+  gap: 1rem;
+  flex-wrap: nowrap; /* Prevent cards from wrapping */
+  overflow-x: auto; /* Allows scrolling horizontally if cards overflow */
+  margin-top: 8%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  width: calc(25% - 2rem); /* Adjust width for spacing */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: black; /* Black background on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+.card h2, .card p {
+  transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: calc(50% - 2rem); /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      width: 100%; /* Full width on very small screens */
+  }
+}
